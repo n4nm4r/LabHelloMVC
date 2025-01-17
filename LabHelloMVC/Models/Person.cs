@@ -2,11 +2,10 @@
 
 namespace LabHelloMVC.Models
 {
-    public class Person : Controller
+    public class Person
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        public string FirstName {  get; set; }
+
+        public string LastName { get; set; }
     }
 }

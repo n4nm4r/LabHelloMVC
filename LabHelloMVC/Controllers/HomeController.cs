@@ -15,7 +15,11 @@ namespace LabHelloMVC.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            Person person = new Person();
+            person.FirstName = "Nancy";
+            person.LastName = "Martin";
+
+            return View(person);
         }
 
         public IActionResult Privacy()
